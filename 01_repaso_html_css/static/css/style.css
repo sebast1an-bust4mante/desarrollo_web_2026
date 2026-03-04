@@ -1,0 +1,88 @@
+/* Ajustes globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #008000;
+    /* verde */
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+body {
+    background-color: #e0e0e0;
+    /* gris claro */
+    ;
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: blue;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 500px;
+}
+
+.sidebar button {
+    background-color: yellow;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: bold;
+    ;
+    cursor: pointer;
+}
+
+.contenido {
+    flex: 1;
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 15px;
+}
+
+.tarjeta {
+    flex: 1;
+    background-color: yellow;
+    height: 200px;
+}
+
+.learn {
+    background-color: #990099;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.learn button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: beige;
+    font-weight: bold;
+    cursor: pointer;
+    color: #990099;
+    font-size: 1.1em;
+}

@@ -1,0 +1,157 @@
+/* Estilos personalizados para Cat Universe */
+
+/* Variables globales */
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --card-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  --shadow-hover: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Estilos para las tarjetas de gatos */
+.cat-card {
+  transition: var(--card-transition);
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.cat-card img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cat-card:hover img {
+  transform: scale(1.05);
+}
+
+.cat-card .card-body {
+  padding: 1.5rem;
+}
+
+.cat-card .card-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cat-card .card-text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Sección de búsqueda */
+.search-section {
+  background: var(--primary-gradient);
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255,255,255,0.1);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+/* Badges de categorías */
+.category-badge {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  border-radius: 50px !important;
+}
+
+.category-badge:hover {
+  transform: scale(1.05);
+  background-color: #0d6efd !important;
+  color: white !important;
+  border-color: white;
+}
+
+.category-badge.active {
+  background-color: #0d6efd !important;
+  color: white !important;
+  border-color: white;
+}
+
+/* Estilos para el footer */
+footer {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-top: 1px solid #dee2e6;
+}
+
+footer p {
+  color: #6c757d;
+}
+
+/* Clase personalizada para columnas de 20% */
+@media (min-width: 1200px) {
+  .col-xl-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
+/* Responsive para tablets */
+@media (max-width: 991px) {
+  .cat-card img {
+    height: 180px;
+  }
+  
+  .search-section {
+    padding: 2rem 0;
+  }
+  
+  .category-badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+/* Responsive para móviles */
+@media (max-width: 767px) {
+  .cat-card img {
+    height: 160px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .search-section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cat-card {
+  animation: fadeIn 0.5s ease-out;
+}

@@ -3,7 +3,7 @@ const catBreeds = [
     {
         id: 1,
         name: "Rigby",
-        description: "Pelaje largo y sedoso, cara plana y carácter tranquilo. Ideales para departamentos.",
+        description: "Es una gatita viral por su apariencia peculiar y tierna, caracterizada por tener siempre la lengua afuera y una expresión de confusión constante.",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRzJsS2WQUAcUGn4yZULXGYfHgvE8mzzzQCA&s",
         badges: ["Gato negro", "ojos amarillos"],
         filter: "longhair",
@@ -11,8 +11,8 @@ const catBreeds = [
     },
     {
         id: 2,
-        name: "Uni",
-        description: "Elegantes, vocales y muy cariñosos. Pelaje corto con puntos de color característicos.",
+        name: "Jess",
+        description: "Es un gato de esmoquin en blanco y negro que logró viralidad en línea en octubre y noviembre de 2022 después de que su modelo se agregara por primera vez a Garry's Mod.",
         image: "https://lh3.googleusercontent.com/chat_attachment/AP1Ws4sZYVf_z-X0-PpIiKZ4oqEO1zlj9cmdGMuaOU3yKUZFH90Yjfzj7S-eX65c9e6oz8sVfsLzNes-PGNRca-D4my2yc1GNBVlD_2Ypz5mE7LXsjlahK86JoRlRoFh7Aw3n4KpVLanPd7U2hNTBFxA4IP28slyO5350JRkR5HKXd_0mAorqzfeYivoGQrHEs3qI_Vi9Dwt-WbQi857ryWNWspH-r8-Pq6bAxSu2gipQmssqbz55sY04xfEAX5pmFqjV4nZhp7R8_ajJNGyIF8I92fWXAb6ZIvtD7uXSyMvEdHyx9_QbyD7OEXP7dM-umHhNRw=w512-k",
         badges: ["naranjo", "zzz"],
         filter: "shorthair",
@@ -21,7 +21,7 @@ const catBreeds = [
     {
         id: 3,
         name: "Mei Mei",
-        description: "Aspecto salvaje con manchas como leopardos. Muy activos y juguetones.",
+        description: " A menudo descrita como una gata de pelaje dorado/beige con ojos verdes, se ha vuelto viral por su apariencia tierna y, a veces, una cola con marcas.",
         image: "https://lh3.googleusercontent.com/chat_attachment/AP1Ws4v3EZWnW3imVEkulmV2zRi45gYachRxJ34V5fqZcRDPBeoEBRt7OeAIVhYORFKUnqMP-ZKeSDc0C0Cp1P3dtKNHzUjPLu0S31eBxrDZ1u7TgPzWWLrzVBWwLNLqZSTO8hJDswgfNkiPf9x4R5jBINb8jynKh3_yw0Ylfrh6tQ9UG5Lnho9M-ZvBW_irDNZo-3Mz2Qc5JQxSrj338seK-coUFqmfRRJw7MCxZDLTtlecggH0wDYYki6qzzql7-VBUrLrv3X1LPVyN71MwLHuE5hS03sJ_0iQ85SNDr9UpVaaYeejOp236ma1XHF91t942Ss=w512-k",
         badges: ["Cara de weta", "puro perkin"],
         filter: "shorthair",
@@ -29,9 +29,9 @@ const catBreeds = [
     },
     {
         id: 4,
-        name: "uncle bao",
+        name: "Big Floppa",
         description: "Sin pelo, piel arrugada y muy sociables. Ideales para alérgicos.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1JOntI48SezrTsI8q7aZOUuJ6QHsQ9z9P0A&s",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPWMFcmcSdlMPXEFB96OWE7kNSRqe6Wv7GJw&s",
         badges: ["Sin pelo", "Sociable"],
         filter: "hairless",
         popular: true
@@ -44,6 +44,51 @@ const catBreeds = [
         badges: ["Pelaje largo", "Gigante"],
         filter: "longhair",
         popular: true
+    },
+    {
+        id: 6,
+        name: "Zazu",
+        description: "Gato doméstico común, pelaje suave y personalidad juguetona. Perfecto para familias.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9XznEGoI_ZvM33CN4x50-yV_ol6LiSKX5iw&s", // Reemplaza con una URL real
+        badges: ["Pelaje suave", "Juguetón"],
+        filter: "shorthair",
+        popular: false
+    },
+    {
+        id: 7,
+        name: "Ivar",
+        description: "Gata misteriosa con ojos grandes y pelaje negro. Muy independiente.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTEKdPJIceomsE1btE70B0K52xLUQY9VTEMA&s", // Reemplaza con una URL real
+        badges: ["Negro", "Independiente"],
+        filter: "shorthair",
+        popular: true
+    },
+    {
+        id: 8,
+        name: "Luna",
+        description: "Gato atigrado con energía infinita. Ideal para amantes de la aventura.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR85MRTd0tF-eBoIeKvzcU-QyZHXawmXyaLig&s", // Reemplaza con una URL real
+        badges: ["Atigrado", "Energético"],
+        filter: "shorthair",
+        popular: false
+    },
+    {
+        id: 9,
+        name: "Profesor Jones",
+        description: "Gato blanco puro, pelaje largo y ojos azules. Muy elegante.",
+        image: "https://static.wikitide.net/videogameballswiki/e/ea/Canny-cat.gif", // Reemplaza con una URL real
+        badges: ["Blanco", "Elegante"],
+        filter: "longhair",
+        popular: true
+    },
+    {
+        id: 10,
+        name: "Mr fresh",
+        description: "Gata gris con pelaje corto y carácter dulce. Amigable con niños.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvSt9J3zVFe2tABxsdz0-A1TToX7OCULhFzg&s", // Reemplaza con una URL real
+        badges: ["Gris", "Dulce"],
+        filter: "shorthair",
+        popular: false
     }
 ];
 
